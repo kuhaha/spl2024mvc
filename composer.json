@@ -1,0 +1,22 @@
+{
+  "name": "php_study/spl2024",
+  "description":"Learning PHP Programming in Practice",
+  "version": "1.0.0",
+  "type": "project",
+  "time":"2024-8-28",
+  "authors": [
+    {
+      "name": "hoge",
+      "email": "hoge@gmail.com",
+      "role" : "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-4": {
+        "spl2024\\": "src/"
+    }
+  }
+}
