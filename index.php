@@ -4,7 +4,7 @@ require("vendor/autoload.php");
 $base_url = dirname($_SERVER['PHP_SELF']);
 $view_dir = 'src/views/';
 
-$db_conf = ['host'=>'localhost', 'user'=>'root','pass'=>'','dbname'=>'test'];
+$db_conf = ['host'=>'localhost', 'user'=>'root','pass'=>'','dbname'=>'spl2024db'];
   
 # 1. REQUEST_URI
 // (例) $uri =  '/ksu/spl2024mvc/index.php?to=usr&do=login';
