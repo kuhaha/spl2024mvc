@@ -3,12 +3,13 @@
 1. `Composer`によるパッケージ管理
    
    - `composer.json`: 依存関係・オートロードに関する設定
-   - `composer install`, `composer update`
+   - `composer install`: 依存関係・オートロードのインストール
+   - `composer update`: 依存関係・オートロードの更新
 
 1. `GitHub`によるソースコード管理・共有
    
-   - `.gitignore`: 共有しないファイルやフォルダの指定
-   - `README.md`: マークダウン形式の文書作成
+   - `.gitignore`: 共有しないファイルやフォルダの設定
+   - `README.md`: マークダウン形式文書の作成
 
 1. PHP補足 
 
