@@ -1,6 +1,15 @@
 ##  第２回　PHPプログラミング勉強会（応用編）
 
 1. `Composer`によるパッケージ管理
+   
+   - `composer.json`: 依存関係・オートロードに関する設定
+   - `composer install`, `composer update`
+
+1. `GitHub`によるソースコード管理・共有
+   
+   - `.gitignore`: 共有しないファイルやフォルダの指定
+   - `README.md`: マークダウン形式の文書作成
+
 1. PHP補足 
 
    - `extract()`: 配列の要素を変数にインポートする

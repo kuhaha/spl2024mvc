@@ -10,6 +10,7 @@ class View
     {
         self::$VIEW_DIR = $dir;
     }
+    
     function render($tpl, $params=[])
     {
         ob_start();
