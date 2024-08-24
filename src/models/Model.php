@@ -46,7 +46,10 @@ abstract class Model
     }
 
     function getDetail($where){
-        return $this->getList($where, null, 1, 0);//return one row only
+        $sql = "SELECT * FROM {$this->table} WHERE {$where}";
+        $rs = $this->db->query($sql);
+        if (!$rs) die ('DBエラー: ' . $sql . '<br>' . $this->db->error);
+        return $rs->fetch_assoc();
     }
     
     function insert($data){
