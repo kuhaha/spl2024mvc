@@ -54,7 +54,7 @@ abstract class Model
         $values = array_map(fn($v)=>is_string($v) ? "'{$v}'" : $v, array_values($data));
         $values = implode(",", $values);
         $sql = "INSERT INTO {$this->table} ($keys) VALUES ($values)";
-        $this->db->query($sql);
+        $this->execute($sql);
         return $this->db->affected_rows;
     }
     function update($data, $where){
