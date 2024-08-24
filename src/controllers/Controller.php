@@ -7,16 +7,16 @@ namespace spl2024\controllers;
      protected $view;
      public function __construct($model, $view)
      {
-         $this->model = $model;
-         $this->view = $view;
+        $this->model = $model;
+        $this->view = $view;
      }
      public function model()
      {
-         return $this->model;
+        return $this->model;
      }
      public function view()
      {
-         return $this->view;
+        return $this->view;
      }
 
  } 
