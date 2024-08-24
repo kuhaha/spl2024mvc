@@ -95,8 +95,8 @@
 1. **関数引数のデフォルト値** `func($a, $b=1, $c='')` 
 
    ```php
-   function product($first, $second='NA', $third=1){
-       return "name: {$first}, spec: {$second}, qty: {$third}", PHP_EOL;
+   function product($name, $spec='NA', $qty=1){
+       return "name: {$name}, spec: {$spec}, qty: {$qty}", PHP_EOL;
    }
    echo product('iPad'); // name: iPad, spec: NA, qty: 1
    echo product('iPad', 'mini 8.3'); // name: iPad, spec: mini 8.3, qty: 1
