@@ -4,7 +4,8 @@ namespace spl2024;
 class Router
 {
     private $base = null;
-    private $routes = ['GET'=>[],'POST'=>[]];
+    const METHODS = ['GET','POST'];
+    private $routes;
 /*
 $base = dirname($_SERVER['PHP_SELF']);
 $routes = [
@@ -26,6 +27,7 @@ $routes = [
     public function __construct($base, $routes)
     {
         $this->base = $base;
+        $this->routes = ['GET'=>[],'POST'=>[]];
         foreach ($routes as $route) {
             $method = strtoupper($route[0]);
             $rule = ['path'=>$route[1], 'def'=>$route[2]];
