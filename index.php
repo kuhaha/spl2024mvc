@@ -43,7 +43,7 @@ $view = new $viewClass();
 
 # 5. Coutroller (namespace spl2024\controllers)
 
-$namespace = 'spl2024\\controllers\\'; 
+$namespace = "spl2024\\controllers\\"; 
 $ctrlClass = $namespace . $mvcClass;
 $controller = new $ctrlClass($model, $view);
 
