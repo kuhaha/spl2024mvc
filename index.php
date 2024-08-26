@@ -1,7 +1,6 @@
 <?php
 require("vendor/autoload.php");
 
-$base_url = dirname($_SERVER['PHP_SELF']);
 $view_dir = 'src/views/';
 
 $db_conf = ['host'=>'localhost', 'user'=>'root','pass'=>'','dbname'=>'spl2024db'];
