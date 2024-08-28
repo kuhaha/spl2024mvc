@@ -1,8 +1,10 @@
 <?php
 require("vendor/autoload.php");
 
-$view_dir = 'src/views/';
+session_start();
+date_default_timezone_set("Asia/Tokyo");
 
+$view_dir = 'src/views/';
 $db_conf = ['host'=>'localhost', 'user'=>'root','pass'=>'','dbname'=>'spl2024db'];
   
 # 1. REQUEST_URI

@@ -20,6 +20,11 @@ class View
         include(self::$VIEW_DIR . 'pg_footer.php'); 
         ob_end_flush();
     }
+
+    function redirect($url)
+    {
+        header("Location:{$url}");
+    }
 }
 /*
 class User extends View

@@ -13,12 +13,19 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <?=$_SESSION['uname'] ?? 'ゲスト'?>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="?to=prg&do=list">HOME</a>
-        <a class="nav-link" href="?to=usr&do=login">LOGIN</a>
-        <a class="nav-link" href="?to=prg&do=list">LIST</a>
-        <a class="nav-link disabled">HELP</a>
+               
+        <?php
+        if (isset($_SESSION['urole'])){
+          echo '<a class="nav-link" href="?to=usr&do=list">LIST</a>', PHP_EOL;
+          echo '<a class="nav-link" href="?to=usr&do=logout">LOGOUT</a>', PHP_EOL;
+        }else{
+          echo '<a class="nav-link" href="?to=usr&do=login">LOGIN</a>', PHP_EOL;
+        }
+        ?>
       </div>
     </div>
   </div>

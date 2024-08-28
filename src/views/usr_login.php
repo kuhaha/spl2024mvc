@@ -1,5 +1,5 @@
 <h2 class="text-primary">ログイン</h2>
-<form action="?to=usr&do=check" method="post">
+<form action="?to=usr&do=auth" method="post">
 <div class="form-group">
   <label for="text1">ユーザID:</label>
   <input type="text" name="uid" id="text1" class="form-control">
