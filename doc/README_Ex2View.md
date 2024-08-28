@@ -1,5 +1,8 @@
-```php
 ## C. View
+
+
+
+```php
 namespace spl2024\views {
 
 class View

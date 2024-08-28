@@ -1,6 +1,7 @@
+## Model
+
 
 ```php
-## Model
 namespace spl2024\models {
      
 abstract class Model
