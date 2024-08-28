@@ -100,7 +100,7 @@
    }
    echo product('iPad'); // name: iPad, spec: NA, qty: 1
    echo product('iPad', 'mini 8.3'); // name: iPad, spec: mini 8.3, qty: 1
-   echo product('iPad', third:3); // name: iPad, spec: NA, qty: 3
+   echo product('iPad', qty:3); // name: iPad, spec: NA, qty: 3
    ```
 
 1. **可変長引数** `func(...$args)`
