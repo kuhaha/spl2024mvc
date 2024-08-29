@@ -33,7 +33,7 @@ class User extends Controller
             } 
             return $this->view()->redirect('?to=prg&do=list');
         }else{
-            return $this->view()->redirect('?to=usr&do=login'); 
+            return $this->view()->render('usr_login'); 
         }
     }
 }
