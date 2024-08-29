@@ -15,9 +15,9 @@ class View
     {
         ob_start();
         extract($params);
-        include(self::$VIEW_DIR . 'pg_header.php');
-        include(self::$VIEW_DIR . $tpl. '.php');
-        include(self::$VIEW_DIR . 'pg_footer.php'); 
+        include self::$VIEW_DIR . "pg_header.php";
+        include self::$VIEW_DIR . "{$tpl}.php";
+        include self::$VIEW_DIR . "pg_footer.php"; 
         ob_end_flush();
     }
 
