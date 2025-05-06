@@ -20,7 +20,7 @@
 
    ```php
    $grade = 87;
-   $result = $grade >= 90 : 'S' : 'A以下';
+   $result = $grade >= 90 ? 'S' : 'A以下';
    echo $result, PHP_EOL; // A以下
    ```
 
