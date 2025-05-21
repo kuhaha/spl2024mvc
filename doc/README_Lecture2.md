@@ -125,14 +125,6 @@ flowchart LR　
 ```
 
 - **Router**：クライアントからのリクエストを解析し、適切なControllerを選び、そこへ処理を誘導する
-```php
-[//　routing rules 例：
-  ['GET', '/usr/login', ['c'=>'User', 'a'=>'login']],
-  ['GET', '/usr/logout', ['c'=>'User', 'a'=>'logout']],
-  ['GET', '/s/([a-z0-9]+)/edit', ['c'=>'Student', 'a'=>'edit', 'p'=>['sid']]],
-  ['GET', '/s/([a-z0-9]+)/detail', ['c'=>'Student', 'a'=>'detail', 'p'=>['sid']]],  
-]
-```
 - **Controller（コントローラー）**：クライアントからの処理要求に応じて、リスポンスを生成する
 - **Model（モデル）**：上記のリスポンスを生成する際に必要なデータの処理を行う
 - **View（ビュー）**：モデルによって提供されたデータを利用して画面を生成する。
