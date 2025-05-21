@@ -126,7 +126,7 @@ flowchart LR　
 
 - **Router**：クライアントからのリクエストを解析し、適切なControllerを選び、そこへ処理を誘導する
 ```php
-[
+[//　routing rules 例：
   ['GET', '/usr/login', ['c'=>'User', 'a'=>'login']],
   ['GET', '/usr/logout', ['c'=>'User', 'a'=>'logout']],
   ['GET', '/s/([a-z0-9]+)/edit', ['c'=>'Student', 'a'=>'edit', 'p'=>['sid']]],
