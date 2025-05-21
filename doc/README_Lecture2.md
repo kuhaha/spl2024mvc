@@ -13,7 +13,7 @@
     ```php
     $array = ['id'=>23, 'ym'=>2408];
     extract($array);
-    echo '$id = ', $id, ', $ym = ', $ym, PHP_EOL; // $id = 23, $ym = 2408
+    echo '$id = ', $id, ', $ym = ', $ym, PHP_EOL; // 出力：$id = 23, $ym = 2408
     ```
 
 1. **三項演算子** `(条件式) ? (式1) : (式2)`
@@ -21,7 +21,7 @@
    ```php
    $grade = 87;
    $result = $grade >= 90 ? 'S' : 'A以下';
-   echo $result, PHP_EOL; // A以下
+   echo $result, PHP_EOL; //  出力：A以下
    ```
 
 1. **Null合体演算子**`(式1) ?? (式2)`
@@ -56,7 +56,7 @@
    if ('01' !== 01){//型が同じではいため、等しくない
        echo '!==等しくない', PHP_EOL;
    }
-   /**
+   /* 出力：
    ==等しい
    !==等しくない
    */
@@ -69,7 +69,7 @@
        var_export($x);
        echo  "\t ", ($x)? 'true' : 'false', PHP_EOL;
    }
-   /**
+   /* 出力：
    false	 false
    0	 false
    0.0	 false
@@ -98,9 +98,9 @@
    function product($name, $spec='NA', $qty=1){
        return "name: {$name}, spec: {$spec}, qty: {$qty}", PHP_EOL;
    }
-   echo product('iPad'); // name: iPad, spec: NA, qty: 1
-   echo product('iPad', 'mini 8.3'); // name: iPad, spec: mini 8.3, qty: 1
-   echo product('iPad', qty:3); // name: iPad, spec: NA, qty: 3
+   echo product('iPad'); // 出力： name: iPad, spec: NA, qty: 1
+   echo product('iPad', 'mini 8.3'); // 出力： name: iPad, spec: mini 8.3, qty: 1
+   echo product('iPad', qty:3); // 出力： name: iPad, spec: NA, qty: 3
    ```
 
 1. **可変長引数** `func(...$args)`
@@ -109,8 +109,8 @@
    function sum(...$numbers) {
        return array_reduce($numbers, fn($x,$y)=>$x + $y, 0);
    }
-   echo sum(1, 2, 3), PHP_EOL; // 6
-   echo sum(1, 3, 5, 7, 9, 11), PHP_EOL; // 36
+   echo sum(1, 2, 3), PHP_EOL; // 出力： 6
+   echo sum(1, 3, 5, 7, 9, 11), PHP_EOL; // 出力： 36
    ```
 
 
